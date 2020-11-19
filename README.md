@@ -6,7 +6,7 @@
 
 ## Introduction
 
-This is a sample Dockerfile to run [*Jupyter*](http://jupyter.org) with PHP8.0 (JIT enabled) kernel using patched **[Jupyter-PHP](https://github.com/Litipk/Jupyter-PHP)**.
+This is a sample Dockerfile to run [*Jupyter*](http://jupyter.org) with PHP8.0 (JIT enabled) kernel using patched **[Jupyter-PHP](https://github.com/Litipk/Jupyter-PHP)**. Works on RaspberryPi(ARM), Windows10 and macOS(Intel/AMD).
 
 - For more detals about Jupyter-PHP see: [Jupyter-PHP](https://github.com/Litipk/Jupyter-PHP) @ GitHub
 
@@ -101,6 +101,9 @@ $ docker run --rm -it -p 8001:8000 -v $(pwd)/data:/workspace jupyter:local
   - pywidgets
   - nbformat
   - traitlets
+- Architecture (CPU) Tested:
+  - Intel/AMD: Windows10 (Docker v20.10.0-rc1), macOS Catalina (Docker v19.03.13)
+  - ARM v7l: Raspbian Jessie (Docker v19.03.13)
 
 ## Troubleshoot
 
