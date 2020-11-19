@@ -1,6 +1,6 @@
 <!-- markdownlint-disable MD033 -->
 
-# Dockerfile of Jupyter with PHP8 Kernal
+# Dockerfile of Jupyter with PHP8 Kernel
 
 [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg)](LICENSE)
 
