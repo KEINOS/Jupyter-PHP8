@@ -63,6 +63,12 @@ docker run -it jupyter:local /bin/sh
 ## Sample usage
 
 ```shellsession
+$ git clone https://github.com/KEINOS/Jupyter-PHP8.git && cd Jupyter-PHP8
+...
+
+$ docker build -t jupyter:local .
+...(this takes time)...
+
 $ docker run --rm -it -p 8001:8000 -v $(pwd)/data:/workspace jupyter:local
 [I 09:19:03.520 LabApp] Writing notebook server cookie secret to /root/.local/share/jupyter/runtime/notebook_cookie_secret
 [I 09:19:04.470 LabApp] JupyterLab extension loaded from /usr/local/lib/python3.9/site-packages/jupyterlab
@@ -80,7 +86,7 @@ $ docker run --rm -it -p 8001:8000 -v $(pwd)/data:/workspace jupyter:local
         http://a9b6b6cde2b3:8000/?token=2c7a9b0dce099eb8c2571072e51b0bce499143dab0aff271
      or http://127.0.0.1:8000/?token=2c7a9b0dce099eb8c2571072e51b0bce499143dab0aff271
 
-# In the case above the URL to access from your browser will be:
+# Then launch a browser and access to the container. In the case above the URL to access will be:
 #   http://localhost:8001/?token=2c7a9b0dce099eb8c2571072e51b0bce499143dab0aff271
 ```
 
