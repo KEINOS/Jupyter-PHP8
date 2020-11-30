@@ -9,8 +9,10 @@
 This is a sample Dockerfile to run [*Jupyter*](http://jupyter.org) with PHP8.0 (JIT enabled) kernel using patched **[Jupyter-PHP](https://github.com/Litipk/Jupyter-PHP)**.
 
 - Works on: ARM v6l,v7l,ARM64 (Raspbian, RaspberryPi) and Intel/AMD (64bit Windows10 and macOS) architectures.
-
 - For more detals about Jupyter-PHP see: [Jupyter-PHP](https://github.com/Litipk/Jupyter-PHP) @ GitHub
+- For NON Docker Users
+  - To just fix the [Jupyter-PHP-Installer](https://github.com/Litipk/Jupyter-PHP-Installer), use the below patch.
+    - [diff.jupyter-php.patch](https://github.com/KEINOS/Jupyter-PHP8/blob/docker/diff.jupyter-php.patch)
 
 ## Usage
 
